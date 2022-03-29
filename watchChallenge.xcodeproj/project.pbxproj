@@ -17,6 +17,9 @@
 		B46AFA2727F3932C00F6E0E2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AFA2627F3932C00F6E0E2 /* ComplicationController.swift */; };
 		B46AFA2927F3932E00F6E0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46AFA2827F3932E00F6E0E2 /* Assets.xcassets */; };
 		B46AFA2C27F3932E00F6E0E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46AFA2B27F3932E00F6E0E2 /* Preview Assets.xcassets */; };
+		B46AFA3F27F398E200F6E0E2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AFA3E27F398E200F6E0E2 /* Product.swift */; };
+		B46AFA4327F39A0600F6E0E2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AFA4227F39A0600F6E0E2 /* AlertView.swift */; };
+		B46AFA4527F39AF900F6E0E2 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AFA4427F39AF900F6E0E2 /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		B46AFA2B27F3932E00F6E0E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B46AFA2D27F3932E00F6E0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B46AFA2E27F3932E00F6E0E2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B46AFA3E27F398E200F6E0E2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B46AFA4227F39A0600F6E0E2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		B46AFA4427F39AF900F6E0E2 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +124,9 @@
 		B46AFA1D27F3932C00F6E0E2 /* watchChallenge WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B46AFA3D27F398D200F6E0E2 /* Model */,
+				B46AFA3C27F398C000F6E0E2 /* View */,
 				B46AFA1E27F3932C00F6E0E2 /* watchChallengeApp.swift */,
-				B46AFA2027F3932C00F6E0E2 /* ContentView.swift */,
 				B46AFA2227F3932C00F6E0E2 /* NotificationController.swift */,
 				B46AFA2427F3932C00F6E0E2 /* NotificationView.swift */,
 				B46AFA2627F3932C00F6E0E2 /* ComplicationController.swift */,
@@ -137,6 +144,24 @@
 				B46AFA2B27F3932E00F6E0E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B46AFA3C27F398C000F6E0E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B46AFA2027F3932C00F6E0E2 /* ContentView.swift */,
+				B46AFA4227F39A0600F6E0E2 /* AlertView.swift */,
+				B46AFA4427F39AF900F6E0E2 /* StoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B46AFA3D27F398D200F6E0E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B46AFA3E27F398E200F6E0E2 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +293,12 @@
 			files = (
 				B46AFA2327F3932C00F6E0E2 /* NotificationController.swift in Sources */,
 				B46AFA2127F3932C00F6E0E2 /* ContentView.swift in Sources */,
+				B46AFA4527F39AF900F6E0E2 /* StoreView.swift in Sources */,
+				B46AFA4327F39A0600F6E0E2 /* AlertView.swift in Sources */,
 				B46AFA2727F3932C00F6E0E2 /* ComplicationController.swift in Sources */,
 				B46AFA1F27F3932C00F6E0E2 /* watchChallengeApp.swift in Sources */,
 				B46AFA2527F3932C00F6E0E2 /* NotificationView.swift in Sources */,
+				B46AFA3F27F398E200F6E0E2 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
